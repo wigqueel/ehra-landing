@@ -1,0 +1,19 @@
+.button-explore {
+ 
+  background-color: $orange;
+  min-width: 100px;
+  display: flex;
+  padding: 14px 20px 14px 20px;
+  color: $white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  img{
+    padding-left: 24px;
+  }
+}
+
+.button-explore:hover{
+  background-color: $orange-hover;
+}

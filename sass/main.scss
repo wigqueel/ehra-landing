@@ -1,0 +1,30 @@
+/*
+ * Import all top level partials here
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+@import "base/variables";
+@import "base/_base.scss";
+@import "sections/_header.scss";
+@import "sections/_container-what";
+@import "sections/_button-explore";
+@import "sections/_footer.scss";
+@import "texts/standart";
+
+body{
+    background-color: $background;
+    text-decoration: none;
+    margin: auto;
+    a:hover{
+        text-decoration: underline;
+    }
+    ul{
+    list-style-type: none;}
+
+}
+
+main{
+    max-width: 1500px;
+}

@@ -1,0 +1,37 @@
+.container-what {
+  display: flex;
+  background-color: $white;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  padding: 7% 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  .text{
+    padding-top: 2%;
+    max-width: 37%;
+    margin-left: 8%;
+    min-width: 30%;
+  }
+ img{
+   margin-left: 0;
+ }
+  h1 {
+    font-family: Nunito;
+    font-size: 72px;
+    color: #eeeef3;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  h2 {
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

@@ -1,0 +1,366 @@
+/*
+ * Import all top level partials here
+ */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 24px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  overflow: hidden;
+  background-color: #FCFCFD;
+  border-radius: 15px;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+}
+
+header li {
+  display: inline;
+}
+
+header .primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px 10px 0;
+  background: #f07e4a;
+  color: #FCFCFD;
+  border-radius: 16px;
+}
+
+header .primary-nav .logo {
+  padding-left: 20px;
+}
+
+header .primary-nav .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15%;
+}
+
+header .primary-nav .socials a img {
+  margin: 5px 0 0 0;
+  padding-right: 10px;
+}
+
+header .primary-nav ul {
+  white-space: nowrap;
+}
+
+header .primary-nav ul li {
+  padding-right: 28px;
+}
+
+header .primary-nav ul li a {
+  color: #FCFCFD;
+}
+
+header .primary-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .primary-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .primary-nav .right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .primary-nav .right-part .tools {
+  margin-right: 15px;
+}
+
+header .primary-nav .right-part .tools img {
+  margin-top: 5px;
+}
+
+header .primary-nav .right-part button {
+  min-width: 100px;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #f07e4a;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+header .primary-nav .right-part button .ribesubsc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .primary-nav .right-part button:hover .subscribe .subsc {
+  margin: -58px;
+}
+
+header .primary-nav .right-part button:hover .subscribe .ribe {
+  margin: -50px;
+}
+
+header .secondary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 16px;
+}
+
+header .secondary-nav a {
+  text-decoration: none;
+  color: #1C1A1E;
+}
+
+header .secondary-nav li {
+  text-transform: uppercase;
+  padding-right: 56px;
+}
+
+.container-what {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FCFCFD;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  padding: 7% 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-what .text {
+  padding-top: 2%;
+  max-width: 37%;
+  margin-left: 8%;
+  min-width: 30%;
+}
+
+.container-what img {
+  margin-left: 0;
+}
+
+.container-what h1 {
+  font-family: Nunito;
+  font-size: 72px;
+  color: #eeeef3;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.container-what h2 {
+  font-family: Nunito;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.button-explore {
+  background-color: #f07e4a;
+  min-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 20px 14px 20px;
+  color: #FCFCFD;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button-explore img {
+  padding-left: 24px;
+}
+
+.button-explore:hover {
+  background-color: #DD6B36;
+}
+
+footer {
+  padding-top: 6%;
+  background-color: #1C1A1E;
+  color: #FCFCFD;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+footer .footer-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 5% 5% 0;
+}
+
+footer a {
+  color: #FCFCFD;
+}
+
+footer .footer-logo {
+  padding-top: 1%;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  opacity: 50%;
+}
+
+footer .footer-item ul {
+  padding-left: 0;
+}
+
+footer .footer-item ul .socials {
+  margin-left: -6px;
+}
+
+footer .footer-item ul .contacts {
+  padding: 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-item ul li {
+  padding-bottom: 4px;
+}
+
+footer .footer-bottom {
+  opacity: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-bottom li {
+  white-space: nowrap;
+  padding-left: 20px;
+  display: inline;
+}
+
+.standart-text {
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+body {
+  background-color: #E5E5E5;
+  text-decoration: none;
+  margin: auto;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+main {
+  max-width: 1500px;
+}

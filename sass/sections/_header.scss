@@ -1,0 +1,101 @@
+header {
+  margin-bottom: 24px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  li {
+    display: inline;
+  }
+  overflow: hidden;
+  .primary-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 0;
+    .logo {
+      padding-left: 20px;
+    }
+    .socials {
+      display: flex;
+      padding-left: 15%;
+      a {
+        img {
+          margin: 5px 0 0 0;
+          padding-right: 10px;
+        }
+      }
+    }
+    ul {
+      white-space: nowrap;
+      li {
+        padding-right: 28px;
+        a {
+          color: $white;
+        }
+      }
+    }
+    nav {
+      display: flex;
+    }
+    .logo {
+      display: flex;
+    }
+    background: $orange;
+    color: $white;
+    border-radius: 16px;
+    .right-part {
+      display: flex;
+      .tools {
+        margin-right: 15px;
+        img {
+          margin-top: 5px;
+        }
+      }
+
+      button {
+        min-width: 100px;
+        padding: 10px;
+        text-transform: uppercase;
+        color: $orange;
+        border: none;
+        border-radius: 50px;
+        background-color: white;
+        cursor: pointer;
+        .ribesubsc {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      button:hover .subscribe {
+        .subsc {
+          margin: -58px;
+        }
+        .ribe {
+          margin: -50px;
+        }
+      }
+    }
+  }
+  background-color: $white;
+  border-radius: 15px;
+  perspective: 1px;
+  .secondary-nav {
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    li {
+      text-transform: uppercase;
+      padding-right: 56px;
+    }
+  }
+}
