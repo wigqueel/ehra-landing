@@ -1,5 +1,5 @@
 header {
-  
+  margin: 0;
   font-family: Nunito;
   font-size: 14px;
   font-style: normal;
@@ -7,7 +7,7 @@ header {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-
+  
   li {
     display: inline;
   }
@@ -19,11 +19,12 @@ header {
     align-items: center;
     padding: 10px 20px 10px 0;
     .logo {
-      padding-left: 20px;
+      padding-left: 10px;
     }
     .socials {
       display: flex;
-      padding-left: 15%;
+      
+      margin-right: 130px;
       a {
         img {
           margin: 5px 0 0 0;
@@ -33,6 +34,7 @@ header {
     }
     ul {
       white-space: nowrap;
+      margin: 0;
       li {
         padding-right: 28px;
         a {
@@ -67,17 +69,42 @@ header {
         border-radius: 50px;
         background-color: white;
         cursor: pointer;
-        .ribesubsc {
-          display: flex;
-          justify-content: space-between;
+        max-width: 100px;
+        .first {
+          display: none;
         }
       }
-      button:hover .subscribe {
-        .subsc {
-          margin: -58px;
+      button:hover {
+        .first {
+          display: flex;
         }
-        .ribe {
-          margin: -50px;
+        .marquee {
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        .marquee span {
+          display: inline-block;
+          padding-left: 100%;
+          -webkit-animation: marquee 1s infinite linear;
+          animation: marquee 1s infinite linear;
+        }
+
+        @-webkit-keyframes marquee {
+          0% {
+            -webkit-transform: translate(-50%, 0);
+          }
+          100% {
+            -webkit-transform: translate(0, 0);
+          }
+        }
+        @keyframes marquee {
+          0% {
+            transform: translate(-50%, 0);
+          }
+          100% {
+            transform: translate(0, 0);
+          }
         }
       }
     }
@@ -86,10 +113,19 @@ header {
   border-radius: 15px;
   perspective: 1px;
   .secondary-nav {
+    position: relative;
+    .logo{
+      position: absolute;
+      left: 15px;
+      bottom: -15px;
+      justify-content: left;
+    }
     a {
       text-decoration: none;
       color: $black;
     }
+    height: 1em;
+    margin: 30px 0;
     display: flex;
     justify-content: center;
     border-radius: 16px;

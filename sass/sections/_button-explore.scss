@@ -1,7 +1,7 @@
 .button-explore {
- 
+ position: relative;
   background-color: $orange;
-  min-width: 100px;
+  min-width: 164px;
   display: flex;
   padding: 14px 20px 14px 20px;
   color: $white;
@@ -10,10 +10,17 @@
   cursor: pointer;
   white-space: nowrap;
   img{
-    padding-left: 24px;
+    position: absolute;
+    width: 18px;
+    top: 19px;
+    left: 125px;
+    transition: left 1s;
   }
 }
 
 .button-explore:hover{
+  img{
+    left: 135px;
+  }
   background-color: $orange-hover;
 }

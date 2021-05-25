@@ -2,8 +2,7 @@
  * Import all top level partials here
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 @import "base/variables";
 @import "base/_base.scss";
@@ -13,38 +12,36 @@
 @import "sections/_footer.scss";
 @import "texts/standart";
 
-body{
-    background-color: $background;
-    text-decoration: none;
+body {
+  background-color: $background;
+  text-decoration: none;
+
+  margin: auto;
+  a {
+    position: relative;
     
-    margin: auto;
-    a{
-        position: relative; 
-    }
-    a:after {
-        position: absolute;
-        content: '';
-        height: 2px;
-        bottom: -4px; 
-        margin: 0 auto;
-		left: 0;
-        right: 0;
-		width: 50%;
-		
-	
-    }
-	 
-
-    a:hover:after{
-        width: 100%;
-		background-color: black
-    }
-    ul{
-    list-style-type: none;}
-
+  }
+  a:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    color: white;
+  }
+  a:hover:after {
+    width: 100%;
+    background-color: black;
+  }
+  ul {
+    list-style-type: none;
+  }
 }
 
-main{
-    max-width: 1500px;
-    width: 100%;
+main {
+  max-width: 1500px;
+  width: 100%;
 }
