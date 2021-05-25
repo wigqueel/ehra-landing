@@ -1,19 +1,29 @@
 .container-what {
-  display: flex;
+  
   background-color: $white;
   border-radius: 20px;
-  margin-bottom: 24px;
-  padding: 7% 0;
+  padding: 102px 0;
   flex-wrap: wrap;
-  justify-content: center;
+  
+  .text-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   .text{
-    padding-top: 2%;
-    max-width: 37%;
-    margin-left: 8%;
-    min-width: 30%;
+    
+    padding-top: 20px;
+    max-width: 508px;
+    width: 100%;
   }
  img{
-   margin-left: 0;
+  max-width: 550px;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
   h1 {
     font-family: Nunito;
