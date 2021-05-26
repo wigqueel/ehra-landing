@@ -1,0 +1,23 @@
+.container-double {
+  .container-half {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+    .text{
+        text-align: center;
+        padding: 0 130px  54px ;
+    }
+    border-radius: 20px;
+    
+    width: 50%;
+  }
+  .container-one {
+    margin-right: 4em;
+  }
+  border-radius: 20px;
+  display: flex;
+}

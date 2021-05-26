@@ -4,7 +4,14 @@
   border-radius: 20px;
   padding: 102px 0;
   flex-wrap: wrap;
-  
+  .question-img{
+    img{
+      display: flex;
+      justify-content: center;
+      max-width: 448px;
+    }
+   
+  }
   .text-wrapper{
     align-items: center;
     display: flex;

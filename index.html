@@ -19,8 +19,6 @@
         <header class="mb-4">
           <div class="primary-nav">
             <div class="logo">
-             
-
               <div class="socials">
                 <a href="#">
                   <img src="./images/Facebook.svg" alt="" />
@@ -30,33 +28,62 @@
                 </a>
               </div>
             </div>
-
-            <ul>
-              <li><a href="#"> News</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Countries and Territories</a></li>
-              <li><a href="#">Library</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
+            <div class="headers">
+              <ul>
+                <li><a href="#"> News</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Countries and Territories</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
 
             <div class="right-part">
-              <a href="#" class="tools">
+              <div href="#" class="tools">
                 <img src="./images/Search.svg" alt="" />
-              </a>
+                <form>
+                  <input
+                    type="text"
+                    id="search"
+                    name="fname"
+                    placeholder="Search..."
+                  />
+                  <img class="arrow" src="./images/Regular.svg" alt="" />
+                </form>
+              </div>
               <select name="language" class="tools">
                 <option value="Eng">Eng</option>
                 <option value="Ukr">Ukr</option>
               </select>
 
               <button>
-               
-                <div class="marquee"><span>Subscribe</span><span>Subscribe</span></div>
-                
+                <div class="marquee">
+                  <div class="inner" aria-hidden="true">
+                    <span>Subscribe</span>
+                    <span>Subscribe</span>
+                    <span>Subscribe</span>
+                    <span>Subscribe</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <div class="burger-menu">
+              <img class="bm-btn" src="./images/list.svg" alt="burger-menu" />
+
+              <div class="bm-menu">
+                <ul>
+                  <li><a href="#"> News</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Countries and Territories</a></li>
+                  <li><a href="#">Library</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        
-          
           <div class="secondary-nav">
             <div class="logo">
               <a href="#">
@@ -64,17 +91,17 @@
               </a>
             </div>
             <div class="links">
-            <ul>
-              <li><a href="#">Hard Reduction</a></li>
-              <li><a href="#">Drug Policy</a></li>
-              <li><a href="#">Sustainability</a></li>
-              <li><a href="#">Advocacy</a></li>
-            </ul>
+              <ul>
+                <li><a href="#">Hard Reduction</a></li>
+                <li><a href="#">Drug Policy</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Advocacy</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
         </header>
 
-        <main class="mb-5 ">
+        <main class="mb-5">
           <div class="container-what">
             <div class="row">
               <div class="col col-lg-6 col-12">
@@ -99,11 +126,10 @@
             </div>
           </div>
 
-          <div class="container-what mt-5 ">
+          <div class="container-what mt-5">
             <div class="row">
-              <div class="col col-lg-6 col-12 text-wrapper  ">
+              <div class="col col-lg-6 col-12 text-wrapper">
                 <div class="text">
-                  <h1>01</h1>
                   <h2>What exactly is Eurasian Harm Reduction Association?</h2>
                   <p class="standart-text">
                     Eurasian Harm Reduction Association (EHRA) is a
@@ -117,8 +143,27 @@
                   </button>
                 </div>
               </div>
-              <div class="col col-lg-6 col-12">
-                <img src="./images/Circle.svg" alt="" />
+              <div class="col col-lg-6 col-12 question-img">
+                <img src="./images/Illustration.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="container-double mt-5">
+            <div class="container-half container-one">
+              <div class="img">
+                <img src="./images/Harm.svg" alt="" />
+              </div>
+              <div class="text">
+                <h2>What is Eurasian Harm Reduction Association?</h2>
+              </div>
+            </div>
+            <div class="container-half">
+              <div class="img">
+                <img src="./images/Quiz.svg" alt="" />
+              </div>
+              <div class="text">
+                <h2>What is Eurasian Harm Reduction Association?</h2>
               </div>
             </div>
           </div>
@@ -188,4 +233,5 @@
       </footer>
     </div>
   </body>
+  <script src="./js/burgerMenu.js"></script>
 </html>

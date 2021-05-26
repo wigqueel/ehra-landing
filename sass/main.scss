@@ -11,6 +11,8 @@
 @import "sections/_button-explore";
 @import "sections/_footer.scss";
 @import "texts/standart";
+@import "sections/container-double";
+@import "sections/burger-menu";
 
 body {
   background-color: $background;
@@ -24,13 +26,18 @@ body {
   a:after {
     position: absolute;
     content: "";
-    height: 2px;
-    bottom: -4px;
+    height: 1px;
+    bottom: 1px;
     margin: 0 auto;
+    
     left: 0;
     right: 0;
-    width: 50%;
+    width: 0%;
     color: white;
+
+
+    transition: all ease-in-out .2s;
+   
   }
   a:hover:after {
     width: 100%;
