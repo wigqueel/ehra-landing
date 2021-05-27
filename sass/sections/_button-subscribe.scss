@@ -1,0 +1,67 @@
+.button-subscribe {
+    button {
+      padding: 10px;
+      text-transform: uppercase;
+      font-family: Nunito;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: left;
+
+      color: $orange;
+      border: none;
+      border-radius: 50px;
+      background-color: white;
+      cursor: pointer;
+      max-width: 88px;
+      .inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        span {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          margin-right: 25px;
+        }
+      }
+
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+    button:hover {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .marquee {
+        position: relative;
+        overflow: hidden;
+
+        .inner {
+          width: fit-content;
+          display: flex;
+          position: relative;
+          transform: translate3d($move-initial, 0, 0);
+          animation: marquee 2s linear infinite;
+          animation-play-state: running;
+
+          span {
+            margin-right: 25px;
+          }
+        }
+      }
+
+      @keyframes marquee {
+        100% {
+          transform: translate3d($move-initial, 0, 0);
+        }
+
+        0% {
+          transform: translate3d($move-final, 0, 0);
+        }
+      }
+    }
+  }

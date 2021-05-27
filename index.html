@@ -15,6 +15,49 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="bm-menu">
+        <ul>
+          <li><a href="#"> News</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Countries and Territories</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Hard Reduction</a></li>
+          <li><a href="#">Drug Policy</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Advocacy</a></li>
+
+          <div href="#" class="tools mt-3" id="tools">
+            <img src="./images/Search.svg" alt="" onclick="searchInput()" />
+            <form id="searchInput" >
+              <input
+                type="text"
+                id="search"
+                name="fname"
+                placeholder="Search..."
+              />
+              <img class="arrow" src="./images/Regular.svg" alt="" />
+            </form>
+          </div>
+          <select name="language" class="tools mt-3">
+            <option value="Eng">Eng</option>
+            <option value="Ukr">Ukr</option>
+          </select>
+          <div class="button-subscribe mt-3 d-flex justify-content-center">
+            <button>
+              <div class="marquee">
+                <div class="inner" aria-hidden="true">
+                  <span>Subscribe</span>
+                  <span>Subscribe</span>
+                  <span>Subscribe</span>
+                  <span>Subscribe</span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </ul>
+      </div>
       <div class="container">
         <header class="mb-4">
           <div class="primary-nav">
@@ -40,9 +83,9 @@
             </div>
 
             <div class="right-part">
-              <div href="#" class="tools">
-                <img src="./images/Search.svg" alt="" />
-                <form>
+              <div href="#" class="tools" id="toolsTwo" >
+                <img src="./images/Search.svg" alt="" onclick="searchInputTwo()" class=""/>
+                <form id="searchInputTwo">
                   <input
                     type="text"
                     id="search"
@@ -56,32 +99,22 @@
                 <option value="Eng">Eng</option>
                 <option value="Ukr">Ukr</option>
               </select>
-
-              <button>
-                <div class="marquee">
-                  <div class="inner" aria-hidden="true">
-                    <span>Subscribe</span>
-                    <span>Subscribe</span>
-                    <span>Subscribe</span>
-                    <span>Subscribe</span>
+              <div class="button-subscribe">
+                <button>
+                  <div class="marquee">
+                    <div class="inner" aria-hidden="true">
+                      <span>Subscribe</span>
+                      <span>Subscribe</span>
+                      <span>Subscribe</span>
+                      <span>Subscribe</span>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
             </div>
 
             <div class="burger-menu">
               <img class="bm-btn" src="./images/list.svg" alt="burger-menu" />
-
-              <div class="bm-menu">
-                <ul>
-                  <li><a href="#"> News</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Countries and Territories</a></li>
-                  <li><a href="#">Library</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </div>
             </div>
           </div>
           <div class="secondary-nav">
@@ -234,4 +267,5 @@
     </div>
   </body>
   <script src="./js/burgerMenu.js"></script>
+  <script src="./js/search.js"></script>
 </html>

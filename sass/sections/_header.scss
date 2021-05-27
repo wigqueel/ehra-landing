@@ -2,6 +2,9 @@ $offset: 64%;
 $move-initial: calc(-25% + #{$offset});
 $move-final: calc(-50% + #{$offset});
 
+
+
+
 header {
   margin: 0;
   font-family: Nunito;
@@ -17,7 +20,6 @@ header {
   }
   overflow: hidden;
   .primary-nav {
-    
     a:hover:after {
       background-color: transparent;
     }
@@ -36,7 +38,6 @@ header {
       margin-right: 130px;
       a {
         img {
-          margin: 5px 0 0 0;
           padding-right: 10px;
         }
       }
@@ -72,35 +73,41 @@ header {
       @media (max-width: 1024px) {
         display: none;
       }
+      
       display: flex;
+      
       .tools {
         display: flex;
         flex-direction: row;
-        form {
-          display: flex;
-          position: relative;
+        border-bottom: 2px solid $white;
+        border: none;
+        align-items: center;
+        .searchInput {
           display: none;
+        }
+        form {
+          position: relative;
+      
           .arrow {
             position: absolute;
             right: 0;
-            top: 30%;
-            width: 15px;
+            top: 20%;
+            width: 20px;
           }
           input[type="text"] {
             font-family: Nunito;
             font-size: 14px;
             font-style: normal;
             font-weight: 700;
-            line-height: 20px;
+            line-height: 30px;
             letter-spacing: 0em;
             text-align: left;
             color: $white;
             background-color: $orange;
             border: none;
-            border-bottom: 2px solid $white;
           }
         }
-
+      
         input::placeholder {
           color: $white;
         }
@@ -109,73 +116,8 @@ header {
           cursor: pointer;
         }
       }
-
-      button {
-        padding: 10px;
-        text-transform: uppercase;
-        font-family: Nunito;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px;
-        text-align: left;
-
-        color: $orange;
-        border: none;
-        border-radius: 50px;
-        background-color: white;
-        cursor: pointer;
-        max-width: 88px;
-        .inner {
-          width: fit-content;
-          display: flex;
-          position: relative;
-          span {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            margin-right: 25px;
-          }
-        }
-
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        padding: 0;
-        margin: 0;
-      }
-      button:hover {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .marquee {
-          position: relative;
-          overflow: hidden;
-
-          .inner {
-            width: fit-content;
-            display: flex;
-            position: relative;
-            transform: translate3d($move-initial, 0, 0);
-            animation: marquee 2s linear infinite;
-            animation-play-state: running;
-
-            span {
-              margin-right: 25px;
-            }
-          }
-        }
-
-        @keyframes marquee {
-          100% {
-            transform: translate3d($move-initial, 0, 0);
-          }
-
-          0% {
-            transform: translate3d($move-final, 0, 0);
-          }
-        }
-      }
     }
+    
   }
   background-color: $white;
   border-radius: 15px;
@@ -222,5 +164,46 @@ header {
       text-transform: uppercase;
       padding-right: 56px;
     }
+  }
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid $white;
+  border: none;
+  align-items: center;
+  .searchInput {
+    display: none;
+  }
+  form {
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      right: 0;
+      top: 20%;
+      width: 20px;
+    }
+    input[type="text"] {
+      font-family: Nunito;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $white;
+      background-color: $orange;
+      border: none;
+    }
+  }
+
+  input::placeholder {
+    color: $white;
+  }
+  margin-right: 15px;
+  img {
+    cursor: pointer;
   }
 }
