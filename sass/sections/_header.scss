@@ -2,9 +2,6 @@ $offset: 64%;
 $move-initial: calc(-25% + #{$offset});
 $move-final: calc(-50% + #{$offset});
 
-
-
-
 header {
   margin: 0;
   font-family: Nunito;
@@ -73,51 +70,9 @@ header {
       @media (max-width: 1024px) {
         display: none;
       }
-      
+
       display: flex;
-      
-      .tools {
-        display: flex;
-        flex-direction: row;
-        border-bottom: 2px solid $white;
-        border: none;
-        align-items: center;
-        .searchInput {
-          display: none;
-        }
-        form {
-          position: relative;
-      
-          .arrow {
-            position: absolute;
-            right: 0;
-            top: 20%;
-            width: 20px;
-          }
-          input[type="text"] {
-            font-family: Nunito;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 30px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: $white;
-            background-color: $orange;
-            border: none;
-          }
-        }
-      
-        input::placeholder {
-          color: $white;
-        }
-        margin-right: 15px;
-        img {
-          cursor: pointer;
-        }
-      }
     }
-    
   }
   background-color: $white;
   border-radius: 15px;
@@ -175,8 +130,11 @@ header {
   align-items: center;
   .searchInput {
     display: none;
+    
   }
+
   form {
+    
     position: relative;
 
     .arrow {
@@ -186,6 +144,9 @@ header {
       width: 20px;
     }
     input[type="text"] {
+      &:focus {
+        outline: none;
+      }
       font-family: Nunito;
       font-size: 14px;
       font-style: normal;

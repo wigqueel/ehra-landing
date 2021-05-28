@@ -151,70 +151,6 @@ header .primary-nav .right-part {
   }
 }
 
-header .primary-nav .right-part .tools {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-bottom: 2px solid #FCFCFD;
-  border: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 15px;
-}
-
-header .primary-nav .right-part .tools .searchInput {
-  display: none;
-}
-
-header .primary-nav .right-part .tools form {
-  position: relative;
-}
-
-header .primary-nav .right-part .tools form .arrow {
-  position: absolute;
-  right: 0;
-  top: 20%;
-  width: 20px;
-}
-
-header .primary-nav .right-part .tools form input[type="text"] {
-  font-family: Nunito;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #FCFCFD;
-  background-color: #f07e4a;
-  border: none;
-}
-
-header .primary-nav .right-part .tools input::-webkit-input-placeholder {
-  color: #FCFCFD;
-}
-
-header .primary-nav .right-part .tools input:-ms-input-placeholder {
-  color: #FCFCFD;
-}
-
-header .primary-nav .right-part .tools input::-ms-input-placeholder {
-  color: #FCFCFD;
-}
-
-header .primary-nav .right-part .tools input::placeholder {
-  color: #FCFCFD;
-}
-
-header .primary-nav .right-part .tools img {
-  cursor: pointer;
-}
-
 header .secondary-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,6 +260,10 @@ header .secondary-nav li a:hover:after {
   color: #FCFCFD;
   background-color: #f07e4a;
   border: none;
+}
+
+.tools form input[type="text"]:focus {
+  outline: none;
 }
 
 .tools input::-webkit-input-placeholder {
