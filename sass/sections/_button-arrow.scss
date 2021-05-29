@@ -1,0 +1,20 @@
+.button-arrow{
+    background: $orange;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.button-arrow:hover{
+    transition:0.5s;
+    background-color: $orange-hover;
+    img{
+        transition:1s;
+        transform: rotate(-50deg);
+    }
+}

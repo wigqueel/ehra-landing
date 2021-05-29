@@ -2,6 +2,7 @@
   display: flex;
   
   .container-half {
+    margin-bottom: 128px;
     background-color: $white;
     width: 350px;
     display: flex;
@@ -21,7 +22,7 @@
     width: 50%;
   }
   .container-one {
-    margin-right: 4em;
+    //margin-right: 4em;
   }
   border-radius: 20px;
   display: flex;
