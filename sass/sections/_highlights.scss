@@ -1,51 +1,69 @@
-.highlights{
-    .container-half{
-        margin-bottom: 0px !important;
+.highlights {
+  .container-half {
+    margin-bottom: 0px !important;
+  }
+  .header-highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    img {
+      filter: invert(1);
     }
-    .header-highlights{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-        img{
-            filter: invert(1);
-            
-        }
-        .all-highlights{
-            cursor: pointer;
-        }
-        
-           
-        .all-highlights:hover{
-            color:$orange;
-            img{
-                filter: invert(69%) sepia(35%) saturate(2959%) hue-rotate(325deg) brightness(95%) contrast(98%);
-        
-            }
-        }
+    .all-highlights {
+      cursor: pointer;
     }
-    
-    .container-half{
-        display: flex;
+
+    .all-highlights:hover {
+      color: $orange;
+      img {
+        filter: invert(69%) sepia(35%) saturate(2959%) hue-rotate(325deg)
+          brightness(95%) contrast(98%);
+      }
+    }
+  }
+
+  .container-half {
+    img {
+      max-width: 705px;
+      width: 100%;
+    }
+    display: flex;
     flex-direction: column !important;
     padding: 24px;
-    .highlights-text{
-     padding-right: 76px;   
+    .highlights-text {
+      padding-right: 76px;
     }
-    h5{
-        color:$orange;
+    h5 {
+      color: $orange;
     }
-    .bottom-part{
-        display: flex;
-        justify-content: space-between;
-        ul{
-            margin: 0;
-            padding: 0;
-                display: flex;
-                flex-direction: row;
+    .bottom-part {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        list-style-type: disc;
+        // list-style-image: url("../../images/li-dot.svg");
+        .none-style-li {
+          list-style-image: none !important;
+          list-style-type: none !important;
+        }
+        .views {
+            img{
+                width: 8px;
+            }
+            
             
         }
+        li {
+          list-style-image: "../../images/li-dot.svg";
+          padding-right: 25px;
+          
+        }
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+      }
     }
-    
-    }
+  }
 }

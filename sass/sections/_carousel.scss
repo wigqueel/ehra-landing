@@ -38,7 +38,12 @@
     transition: transform 0.5s;
   }
   .slides > div:target {
-      transform: scale(0.8); 
+    scroll-snap-align: start;
+    width: 100%;
+  
+    transform-origin: center center;
+    transform: scale(0.2);
+    transition: transform 0.5s;
   }
 
 

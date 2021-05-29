@@ -1,13 +1,14 @@
 .container-double {
-  display: flex;
   
+.text-image{
+  border-radius: 20px;
+  
+}  
   .container-half {
     margin-bottom: 128px;
-    background-color: $white;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    
+    
+    
     
     .img {
       display: flex;
@@ -17,13 +18,13 @@
         text-align: center;
         
     }
-    border-radius: 20px;
+
     
-    width: 50%;
+   
   }
   .container-one {
     //margin-right: 4em;
   }
-  border-radius: 20px;
-  display: flex;
+  
+  
 }
