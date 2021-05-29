@@ -7,13 +7,16 @@
 @import "base/variables";
 @import "base/_base.scss";
 @import "sections/_header.scss";
+@import "./sections/carousel";
 @import "sections/_container-what";
 @import "sections/_button-explore";
+
 @import "sections/_footer.scss";
 @import "texts/standart";
 @import "sections/container-double";
 @import "sections/burger-menu";
 @import "sections/button-subscribe";
+
 
 body {
   background-color: $background;

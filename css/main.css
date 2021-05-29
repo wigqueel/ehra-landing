@@ -286,6 +286,91 @@ header .secondary-nav li a:hover:after {
   cursor: pointer;
 }
 
+.container-one .slider {
+  overflow: hidden;
+}
+
+.container-one .slides {
+  display: -webkit-box;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+}
+
+.container-one .slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.container-one .slides::-webkit-scrollbar-thumb {
+  background: #f07e4a;
+  border-radius: 10px;
+}
+
+.container-one .slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container-one .slides > div {
+  scroll-snap-align: start;
+  width: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container-one .slides > div:target {
+  /*   transform: scale(0.8); */
+}
+
+.container-one .author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.container-one .author-info a {
+  color: white;
+}
+
+.container-one img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.container-one .slider > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: white;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.container-one .slider > a:focus {
+  background: #000;
+}
+
 .container-what {
   background-color: #FCFCFD;
   border-radius: 20px;
@@ -490,21 +575,26 @@ footer .footer-bottom li {
 }
 
 .container-double {
-  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
   display: flex;
 }
 
 .container-double .container-half {
   background-color: #FCFCFD;
+  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 20px;
   width: 50%;
 }
@@ -520,7 +610,6 @@ footer .footer-bottom li {
 
 .container-double .container-half .text {
   text-align: center;
-  padding: 0 130px  54px;
 }
 
 .container-double .container-one {
