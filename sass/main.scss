@@ -17,6 +17,7 @@
 @import "sections/container-double";
 @import "sections/burger-menu";
 @import "sections/button-subscribe";
+@import "./sections/_events";
 
 
 body {
@@ -58,3 +59,4 @@ main {
   max-width: 1500px;
   width: 100%;
 }
+

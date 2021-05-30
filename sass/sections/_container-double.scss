@@ -1,30 +1,36 @@
 .container-double {
-  
-.text-image{
-  border-radius: 20px;
-  
-}  
+  .text-image {
+    border-radius: 20px;
+    .text-image-inside {
+      flex-direction: column;
+    }
+  }
   .container-half {
-    margin-bottom: 128px;
-    
-    
-    
-    
     .img {
+      img {
+        border-radius: 20px;
+      }
       display: flex;
       justify-content: center;
     }
-    .text{
-        text-align: center;
-        
-    }
+    .text {
+      display: flex;
+      justify-content: center;
 
-    
-   
+      text-align: center;
+    }
+    .bottom-part{
+      ul{
+        flex-wrap: wrap;
+        white-space: nowrap;
+        display: flex;
+      }
+     
+      
+      flex-wrap: wrap;
+    }
   }
   .container-one {
     //margin-right: 4em;
   }
-  
-  
 }

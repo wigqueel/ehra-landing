@@ -1,0 +1,13 @@
+.report {
+    .orange-text{
+        color: $orange;
+    }
+    a{
+        text-transform: uppercase;
+        color: $orange;
+
+    }
+    a:hover:after {
+        background-color: $orange;
+    }
+}

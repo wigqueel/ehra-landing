@@ -3,6 +3,8 @@
     margin-bottom: 0px !important;
   }
   .header-highlights {
+    white-space: nowrap;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,9 +32,9 @@
     }
     display: flex;
     flex-direction: column !important;
-    padding: 24px;
+    
     .highlights-text {
-      padding-right: 76px;
+      
     }
     h5 {
       color: $orange;
@@ -46,6 +48,7 @@
         .none-style-li {
           list-style-image: none !important;
           list-style-type: none !important;
+          margin-left: 0px;
         }
         .views {
             img{
@@ -56,7 +59,7 @@
         }
         li {
           list-style-image: "../../images/li-dot.svg";
-          padding-right: 25px;
+          margin-left: 25px;
           
         }
         margin: 0;

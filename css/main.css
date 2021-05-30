@@ -488,6 +488,9 @@ header .secondary-nav li a:hover:after {
 }
 
 .highlights .header-highlights {
+  white-space: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,16 +532,11 @@ header .secondary-nav li a:hover:after {
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
-  padding: 24px;
 }
 
 .highlights .container-half img {
   max-width: 705px;
   width: 100%;
-}
-
-.highlights .container-half .highlights-text {
-  padding-right: 76px;
 }
 
 .highlights .container-half h5 {
@@ -570,6 +568,7 @@ header .secondary-nav li a:hover:after {
 .highlights .container-half .bottom-part ul .none-style-li {
   list-style-image: none !important;
   list-style-type: none !important;
+  margin-left: 0px;
 }
 
 .highlights .container-half .bottom-part ul .views img {
@@ -578,7 +577,7 @@ header .secondary-nav li a:hover:after {
 
 .highlights .container-half .bottom-part ul li {
   list-style-image: "../../images/li-dot.svg";
-  padding-right: 25px;
+  margin-left: 25px;
 }
 
 footer {
@@ -683,8 +682,11 @@ footer .footer-bottom li {
   border-radius: 20px;
 }
 
-.container-double .container-half {
-  margin-bottom: 128px;
+.container-double .text-image .text-image-inside {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-double .container-half .img {
@@ -696,8 +698,32 @@ footer .footer-bottom li {
           justify-content: center;
 }
 
+.container-double .container-half .img img {
+  border-radius: 20px;
+}
+
 .container-double .container-half .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+}
+
+.container-double .container-half .bottom-part {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-double .container-half .bottom-part ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .burger-menu {
@@ -863,6 +889,19 @@ footer .footer-bottom li {
     -webkit-transform: translate3d(calc(-50% + 64%), 0, 0);
             transform: translate3d(calc(-50% + 64%), 0, 0);
   }
+}
+
+.report .orange-text {
+  color: #f07e4a;
+}
+
+.report a {
+  text-transform: uppercase;
+  color: #f07e4a;
+}
+
+.report a:hover:after {
+  background-color: #f07e4a;
 }
 
 body {
