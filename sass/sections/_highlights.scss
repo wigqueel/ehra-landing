@@ -32,9 +32,8 @@
     }
     display: flex;
     flex-direction: column !important;
-    
+
     .highlights-text {
-      
     }
     h5 {
       color: $orange;
@@ -42,31 +41,8 @@
     .bottom-part {
       display: flex;
       justify-content: space-between;
-      ul {
-        list-style-type: disc;
-        // list-style-image: url("../../images/li-dot.svg");
-        .none-style-li {
-          list-style-image: none !important;
-          list-style-type: none !important;
-          margin-left: 0px;
-        }
-        .views {
-            img{
-                width: 8px;
-            }
-            
-            
-        }
-        li {
-          list-style-image: "../../images/li-dot.svg";
-          margin-left: 25px;
-          
-        }
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-      }
+     
     }
   }
 }
+

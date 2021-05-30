@@ -18,7 +18,8 @@
 @import "sections/burger-menu";
 @import "sections/button-subscribe";
 @import "./sections/_events";
-
+@import "./sections/article";
+@import "./sections/dot-list";
 
 body {
   background-color: $background;

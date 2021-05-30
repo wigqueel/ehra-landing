@@ -1,0 +1,45 @@
+.breadcrumbs {
+  a {
+    color: $black;
+    opacity: 50%;
+    white-space: nowrap;
+  }
+}
+
+.article {
+   
+    a{
+        color: $black;
+    }
+  .main-image {
+    img {
+      border-radius: 20px;
+      max-width: 1500px;
+      width: 100%;
+    }
+  }
+  .content-article{
+    margin-top:  -75px;
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+      .header-article{
+          .header{
+            background-color: $white;
+            border-radius: 20px;
+          }
+          .annotation{
+              background-color: $white;
+          }
+          
+      }
+  }
+  .text-article{
+      ul{
+        list-style-type: inherit;
+      }
+      
+  }
+  
+}
