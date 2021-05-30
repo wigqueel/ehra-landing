@@ -464,6 +464,10 @@ header .secondary-nav li a:hover:after {
   cursor: pointer;
 }
 
+.button-arrow img {
+  height: 18px;
+}
+
 .button-arrow:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -475,6 +479,10 @@ header .secondary-nav li a:hover:after {
   transition: 1s;
   -webkit-transform: rotate(-50deg);
           transform: rotate(-50deg);
+}
+
+.highlights {
+  display: inline-block;
 }
 
 .highlights .container-half {
@@ -498,6 +506,16 @@ header .secondary-nav li a:hover:after {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.highlights .header-highlights h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.highlights .header-highlights span {
+  line-height: 42px;
 }
 
 .highlights .header-highlights img {
@@ -653,6 +671,23 @@ footer .footer-bottom li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.container-double .container-half h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.container-double .container-half h5 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.container-double .container-half p {
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .container-double .container-half .img {
@@ -857,23 +892,68 @@ footer .footer-bottom li {
   }
 }
 
-.report .orange-text {
+.events .orange-text {
   color: #f07e4a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
-.report a {
+.events .small-text {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.events .details {
+  line-height: 24px;
+}
+
+.events .report {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.events .report a {
   text-transform: uppercase;
   color: #f07e4a;
 }
 
-.report a:hover:after {
+.events .report a:hover:after {
   background-color: #f07e4a;
+}
+
+.events .date {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.events .name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .breadcrumbs a {
   color: #1C1A1E;
   opacity: 50%;
   white-space: nowrap;
+}
+
+.article .info {
+  text-transform: uppercase;
+}
+
+.article .info .logo img {
+  border-radius: 20px;
+}
+
+.article .info ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .article a {
@@ -887,7 +967,7 @@ footer .footer-bottom li {
 }
 
 .article .content-article {
-  margin-top: -75px;
+  margin-top: -175px;
   max-width: 750px;
   width: 100%;
   display: -webkit-box;
@@ -903,12 +983,29 @@ footer .footer-bottom li {
   border-radius: 20px;
 }
 
-.article .content-article .header-article .annotation {
+.article .content-article .annotation {
   background-color: #FCFCFD;
+  border-radius: 20px;
+}
+
+.article .content-article .annotation .none-decoration {
+  text-decoration: none;
+}
+
+.article .content-article .annotation ul li {
+  text-decoration: underline;
 }
 
 .article .text-article ul {
   list-style-type: inherit;
+}
+
+.related-articles .article {
+  max-width: 750px;
+}
+
+.dot-list {
+  white-space: nowrap;
 }
 
 .dot-list ul {
@@ -930,13 +1027,34 @@ footer .footer-bottom li {
   margin-left: 0px;
 }
 
+.dot-list ul .views span {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .dot-list ul .views img {
   width: 8px;
 }
 
 .dot-list ul li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
   list-style-image: "../../images/li-dot.svg";
   margin-left: 25px;
+}
+
+.related-articles .related-articles-inside .image img {
+  border-radius: 20px;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -959,8 +1077,8 @@ body a:after {
   right: 0;
   width: 0%;
   color: white;
-  -webkit-transition: all ease-in-out .2s;
-  transition: all ease-in-out .2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 body a:hover:after {
@@ -976,4 +1094,9 @@ main {
   max-width: 1500px;
   width: 100%;
 }
-/*# sourceMappingURL=main.css.map */
+
+main h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}

@@ -6,6 +6,22 @@
     }
   }
   .container-half {
+    h3 {
+      font-size: $headers-font-size;
+      font-weight: 700;
+      line-height: $headers-line-height;
+    }
+    h5 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    p{
+     
+      font-weight: 400;
+      line-height: $content-line-height;
+      
+    }
     .img {
       img {
         border-radius: 20px;
@@ -19,14 +35,13 @@
 
       text-align: center;
     }
-    .bottom-part{
-      ul{
+    .bottom-part {
+      ul {
         flex-wrap: wrap;
         white-space: nowrap;
         display: flex;
       }
-     
-      
+
       flex-wrap: wrap;
     }
   }

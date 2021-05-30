@@ -1,13 +1,43 @@
-.report {
-    .orange-text{
-        color: $orange;
-    }
-    a{
-        text-transform: uppercase;
-        color: $orange;
+.events {
+  .orange-text {
+    color: $orange;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .small-text{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    
+  }
+  .details{
+    
+    line-height: $content-line-height;
+  }
+  .report {
 
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+
+    a {
+      text-transform: uppercase;
+      color: $orange;
     }
     a:hover:after {
-        background-color: $orange;
+      background-color: $orange;
     }
+  }
+  .date{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .name{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    
+  }
 }
