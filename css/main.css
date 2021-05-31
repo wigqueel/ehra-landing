@@ -942,6 +942,33 @@ footer .footer-bottom li {
   white-space: nowrap;
 }
 
+@media (max-width: 576px) {
+  .article-small {
+    max-width: 220px !important;
+  }
+}
+
+.article .text p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.article h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.article h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.article p {
+  font-size: 16px;
+}
+
 .article .info {
   text-transform: uppercase;
 }
@@ -960,6 +987,10 @@ footer .footer-bottom li {
   color: #1C1A1E;
 }
 
+.article .image img {
+  border-radius: 20px;
+}
+
 .article .main-image img {
   border-radius: 20px;
   max-width: 1500px;
@@ -967,7 +998,7 @@ footer .footer-bottom li {
 }
 
 .article .content-article {
-  margin-top: -175px;
+  margin-top: -125px;
   max-width: 750px;
   width: 100%;
   display: -webkit-box;
@@ -983,6 +1014,11 @@ footer .footer-bottom li {
   border-radius: 20px;
 }
 
+.article .content-article .header-article .header h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
 .article .content-article .annotation {
   background-color: #FCFCFD;
   border-radius: 20px;
@@ -992,7 +1028,18 @@ footer .footer-bottom li {
   text-decoration: none;
 }
 
+.article .content-article .annotation .none-decoration h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.article .content-article .annotation ul a:hover {
+  opacity: 100%;
+}
+
 .article .content-article .annotation ul li {
+  font-size: 14px;
+  opacity: 80%;
   text-decoration: underline;
 }
 
@@ -1000,7 +1047,18 @@ footer .footer-bottom li {
   list-style-type: inherit;
 }
 
+.article .tags ul {
+  padding: 0;
+}
+
+.article .tags ul li {
+  border: 1px solid #eeeef3;
+  padding: 0 3px;
+  display: inline;
+}
+
 .related-articles .article {
+  border-right: 1px solid #eeeef3;
   max-width: 750px;
 }
 
@@ -1021,9 +1079,15 @@ footer .footer-bottom li {
           flex-direction: row;
 }
 
+@media (max-width: 576px) {
+  .dot-list ul {
+    list-style-type: none;
+  }
+}
+
 .dot-list ul .none-style-li {
   list-style-image: none !important;
-  list-style-type: none !important;
+  list-style-type: none;
   margin-left: 0px;
 }
 
@@ -1045,8 +1109,15 @@ footer .footer-bottom li {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 5px;
   list-style-image: "../../images/li-dot.svg";
   margin-left: 25px;
+}
+
+@media (max-width: 576px) {
+  .dot-list ul li {
+    margin-left: 0px;
+  }
 }
 
 .related-articles .related-articles-inside .image img {

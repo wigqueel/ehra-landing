@@ -1,28 +1,61 @@
 .breadcrumbs {
+  .none-style-li{
+    
+  }
   a {
     color: $black;
     opacity: 50%;
     white-space: nowrap;
   }
 }
+.article-small{
+  @media (max-width: 576px) {
+    max-width: 220px !important;
+  }
 
+}
 .article {
-   .info{
+ 
+  .text {
+    
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  h4 {
+    font-size: $default-font-size;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: $headers-line-height;
+  }
+  p {
+    font-size: $default-font-size;
+  }
+  .info {
     text-transform: uppercase;
-    .logo{
-      img{
+    .logo {
+      img {
         border-radius: 20px;
       }
     }
-     
-     ul{
+
+    ul {
       align-items: center;
-     }
-    
-   }
-    a{
-        color: $black;
     }
+  }
+  a {
+    color: $black;
+  }
+  .image {
+    img {
+      border-radius: 20px;
+    }
+  }
   .main-image {
     img {
       border-radius: 20px;
@@ -30,44 +63,65 @@
       width: 100%;
     }
   }
-  .content-article{
-    margin-top:  -175px;
+  .content-article {
+    margin-top: -125px;
     max-width: 750px;
     width: 100%;
     display: flex;
     justify-content: center;
-      .header-article{
-          .header{
-            background-color: $white;
-            border-radius: 20px;
-          }
-          
-          
-      }
-      .annotation{
+    .header-article {
+      .header {
+        h2 {
+          font-size: 32px;
+          line-height: 38px;
+        }
         background-color: $white;
         border-radius: 20px;
-        .none-decoration{
-          text-decoration: none;
+      }
+    }
+    .annotation {
+      background-color: $white;
+      border-radius: 20px;
+      .none-decoration {
+        h5 {
+          font-size: 14px;
+
+          font-weight: 700;
         }
-        ul{
-          li{
-            text-decoration: underline;
-          }
+        text-decoration: none;
+      }
+      ul {
+        a:hover{
+          opacity: 100%;
         }
+        li {
+          font-size: 14px;
+          opacity: 80%;
+          text-decoration: underline;
+        }
+      }
     }
   }
-  .text-article{
-      ul{
-        list-style-type: inherit;
-      }
-      
+  .text-article {
+    ul {
+      list-style-type: inherit;
+    }
   }
-  
+  .tags {
+    ul {
+      padding: 0;
+    }
+    ul li {
+      border: 1px solid #eeeef3;
+      padding: 0 3px;
+      display: inline;
+    }
+  }
 }
 
-.related-articles{
-  .article{
+.related-articles {
+  .article {
+    border-right: 1px solid #eeeef3;
     max-width: 750px;
   }
 }

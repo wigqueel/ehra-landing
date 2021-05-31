@@ -1,12 +1,20 @@
 .dot-list {
   white-space: nowrap;
   ul {
+    @media (max-width: 576px) {
+      list-style-type: none;
+      
+    
+    }
+    
     list-style-type: disc;
     // list-style-image: url("../../images/li-dot.svg");
     .none-style-li {
       list-style-image: none !important;
-      list-style-type: none !important;
+      list-style-type: none ;
       margin-left: 0px;
+     
+      
     }
     .views {
       span{
@@ -23,7 +31,12 @@
       font-size: $small-font-size;
       font-weight: 400;
       line-height: 12px;
-
+      margin-bottom: 5px;
+      @media (max-width: 576px) {
+       
+        margin-left: 0px;
+        
+      }
       list-style-image: "../../images/li-dot.svg";
       margin-left: 25px;
     }
