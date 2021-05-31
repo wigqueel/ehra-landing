@@ -893,6 +893,7 @@ footer .footer-bottom li {
 }
 
 .events .orange-text {
+  margin-bottom: 0;
   color: #f07e4a;
   font-size: 14px;
   font-weight: 700;
@@ -1171,3 +1172,4 @@ main h2 {
   font-weight: 700;
   line-height: 56px;
 }
+/*# sourceMappingURL=main.css.map */
