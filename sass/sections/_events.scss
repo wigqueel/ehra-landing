@@ -1,26 +1,8 @@
 .events {
-  .orange-text {
-    margin-bottom: 0;
-    color: $orange;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-  }
-  .small-text{
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 16px;
-    
-  }
-  .details{
-    
-    line-height: $content-line-height;
-  }
   .report {
-
-font-size: 14px;
-font-weight: 600;
-line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
 
     a {
       text-transform: uppercase;
@@ -30,15 +12,31 @@ line-height: 20px;
       background-color: $orange;
     }
   }
-  .date{
+  .date {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
   }
-  .name{
+  .name {
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    
   }
+}
+
+.details {
+  line-height: $content-line-height;
+}
+
+.orange-text {
+  margin-bottom: 0;
+  color: $orange;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.small-text {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
 }

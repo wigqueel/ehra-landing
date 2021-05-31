@@ -6,7 +6,7 @@
   border-radius: 50%;
   width: 36px;
   height: 36px;
-
+  transform: rotate(-50deg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,6 @@
   background-color: $orange-hover;
   img {
     transition: 1s;
-    transform: rotate(-50deg);
+    transform: rotate(50deg);
   }
 }
