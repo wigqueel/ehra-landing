@@ -41,7 +41,7 @@ header {
     }
     .headers {
       ul {
-        @media (max-width: 1024px) {
+        @media (max-width: $buger-disaply-width) {
           display: none;
         }
         white-space: nowrap;
@@ -67,7 +67,7 @@ header {
     color: $white;
     border-radius: 16px;
     .right-part {
-      @media (max-width: 1024px) {
+      @media (max-width: $buger-disaply-width) {
         display: none;
       }
 
@@ -78,14 +78,14 @@ header {
   border-radius: 15px;
   perspective: 1px;
   .secondary-nav {
-    @media (max-width: 1024px) {
+    @media (max-width: $buger-disaply-width) {
       padding: 20px 0;
     }
     a:hover:after {
       background-color: transparent;
     }
     .links {
-      @media (max-width: 1024px) {
+      @media (max-width: $buger-disaply-width) {
         display: none;
       }
       margin: 15px 0;

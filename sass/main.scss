@@ -25,11 +25,12 @@
 
 html {
   font-size: 16px;
+  
 }
 body {
   background-color: $background;
   text-decoration: none;
-
+  font-family: 'Nunito' !important;
   margin: auto;
   a {
     position: relative;
@@ -46,7 +47,7 @@ body {
     width: 0%;
     color: white;
 
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.3s;
   }
   a:hover:after {
     width: 100%;

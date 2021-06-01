@@ -109,7 +109,7 @@ header .primary-nav .headers ul {
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   header .primary-nav .headers ul {
     display: none;
   }
@@ -145,7 +145,7 @@ header .primary-nav .right-part {
   display: flex;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   header .primary-nav .right-part {
     display: none;
   }
@@ -161,7 +161,7 @@ header .secondary-nav {
   border-radius: 16px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   header .secondary-nav {
     padding: 20px 0;
   }
@@ -183,7 +183,7 @@ header .secondary-nav .links {
   margin-right: 120px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   header .secondary-nav .links {
     display: none;
   }
@@ -323,10 +323,10 @@ header .secondary-nav li a:hover:after {
           transform-origin: center center;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .container-one .slides > div:target {
@@ -336,10 +336,10 @@ header .secondary-nav li a:hover:after {
           transform-origin: center center;
   -webkit-transform: scale(0.2);
           transform: scale(0.2);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .container-what {
@@ -435,11 +435,13 @@ header .secondary-nav li a:hover:after {
   width: 18px;
   top: 19px;
   left: 125px;
-  -webkit-transition: left 1s;
-  transition: left 1s;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
 }
 
 .button-explore:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #DD6B36;
 }
 
@@ -732,7 +734,7 @@ footer .footer-bottom li {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .burger-menu {
     display: block;
   }
@@ -752,8 +754,8 @@ footer .footer-bottom li {
   padding-top: 30px;
   z-index: 100;
   height: 100vh;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 0%;
   border-style: solid;
 }
@@ -781,14 +783,14 @@ footer .footer-bottom li {
   border-style: solid;
   width: 250px;
   border-radius: 25px 0px 0 25px;
-  border-color: #91268F;
+  border-color: #FCFCFD;
   background-color: #f07e4a;
   border-width: 3px 0em 3px 3px;
   height: 100vh;
   display: block;
   z-index: 100;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-subscribe button {
@@ -1175,8 +1177,8 @@ footer .footer-bottom li {
   width: 18px;
   top: 19px;
   left: 125px;
-  -webkit-transition: left 1s;
-  transition: left 1s;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
 }
 
 .footer-news .load-more:hover {
@@ -1194,6 +1196,7 @@ html {
 body {
   background-color: #F8F9FA;
   text-decoration: none;
+  font-family: 'Nunito' !important;
   margin: auto;
 }
 
@@ -1211,8 +1214,8 @@ body a:after {
   right: 0;
   width: 0%;
   color: white;
-  -webkit-transition: all ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 body a:hover:after {
@@ -1234,3 +1237,4 @@ main h2 {
   font-weight: 700;
   line-height: 56px;
 }
+/*# sourceMappingURL=main.css.map */
