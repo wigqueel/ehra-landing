@@ -65,6 +65,7 @@ header li {
 }
 
 header .primary-nav {
+  height: 64px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +153,7 @@ header .primary-nav .right-part {
 }
 
 header .secondary-nav {
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,6 +218,13 @@ header .secondary-nav li {
 
 header .secondary-nav li a:hover:after {
   background-color: #1C1A1E;
+}
+
+.searchTool {
+  position: absolute;
+  right: 171px;
+  border-top: none;
+  top: 15px;
 }
 
 .tools {
@@ -373,7 +382,6 @@ header .secondary-nav li a:hover:after {
 }
 
 .container-what .text {
-  padding-top: 20px;
   max-width: 508px;
   width: 100%;
 }

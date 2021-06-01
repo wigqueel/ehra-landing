@@ -17,6 +17,7 @@ header {
   }
   overflow: hidden;
   .primary-nav {
+    height: 64px;
     a:hover:after {
       background-color: transparent;
     }
@@ -78,6 +79,7 @@ header {
   border-radius: 15px;
   perspective: 1px;
   .secondary-nav {
+    height: 65px;
     @media (max-width: $buger-disaply-width) {
       padding: 20px 0;
     }
@@ -121,8 +123,14 @@ header {
     }
   }
 }
-
+.searchTool{
+  position: absolute;
+    right: 171px;
+    border-top: none;
+    top: 15px;
+}
 .tools {
+  
   display: flex;
   flex-direction: row;
   border-bottom: 2px solid $white;
