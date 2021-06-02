@@ -13,10 +13,10 @@
   cursor: pointer;
 }
 .button-arrow:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   background-color: $orange-hover;
   img {
-    transition: 1s;
+    transition: 0.3s;
     transform: rotate(50deg);
   }
 }

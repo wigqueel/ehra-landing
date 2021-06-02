@@ -8,11 +8,11 @@ function clickHandlerBurger() {
 }
 
 const dropdownStatus = (e) => {
-  console.log(e.target.closest('.bm-menu'));
-  console.log(e.target.tagName)
+ 
   if ((!e.target.closest('.bm-menu') && e.target.className !== "bm-btn" )|| e.target.tagName === 'A') {
     bmMenu.classList.remove("bm-menu-active");
     bmMenu.classList.remove("bm-menu-show");
+    
   }
   
 };

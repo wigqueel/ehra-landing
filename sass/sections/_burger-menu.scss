@@ -34,14 +34,17 @@
   transition: 0.3s;
   width: 0%;
   border-style: solid;
-  
 }
 
 .bm-menu-active {
+  input {
+    background-color: $orange !important;
+    transition: 0.3s;
+  }
   border-style: solid;
   width: 250px;
   border-radius: 25px 0px 0 25px;
-  border-color: $white ;
+  border-color: $white;
   background-color: $orange;
   border-width: 3px 0em 3px 3px;
   height: 100vh;
