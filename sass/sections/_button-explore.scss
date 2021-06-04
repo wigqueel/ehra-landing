@@ -1,28 +1,33 @@
 .button-explore {
- position: relative;
-  background-color: $orange;
-  min-width: 164px;
-  display: flex;
-  padding: 14px 20px 14px 20px;
-  color: $white;
-  border: none;
-  border-radius: 10px;
-  
-  cursor: pointer;
-  white-space: nowrap;
-  img{
-    position: absolute;
-    width: 18px;
-    top: 19px;
-    left: 125px;
-    transition: left 0.3s;
-  }
-}
+  position: relative;
+   background-color: $orange;
+   max-width: 164px;
+     width: 100%;
+   display: flex;
+   padding: 14px 20px 14px 20px;
+   color: $white;
+   border: none;
+   border-radius: 10px;
+ 
+   font-size:14px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   white-space: nowrap;
+   img{
+     margin-left:24px;
+     width: 16px;
+     top: 17px;
+     left: 130px;
+     transition:  0.3s;
+   }
+ }
+ 
+ .button-explore:hover{
+   transition: 0.3s;
+   img{
 
-.button-explore:hover{
-  transition: 0.3s;
-  img{
-    left: 130px;
-  }
-  background-color: $orange-hover;
-}
+     margin-left:32px;
+   }
+   background-color: $orange-hover;
+ } 

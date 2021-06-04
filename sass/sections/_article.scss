@@ -1,4 +1,5 @@
 .breadcrumbs {
+  margin-bottom: 32px;
   .none-style-li {
   }
   a {
@@ -8,8 +9,16 @@
   }
 }
 .article-small {
+  border-bottom: 1px solid #EEEEF3;
+  border-right: none !important;
+}
+.article-small-news{
+  
 }
 .article {
+  .article-image{
+    margin-bottom: 20px;
+  }
   .text {
     height: 100%;
     display: flex;
@@ -49,10 +58,14 @@
   a {
     color: $black;
   }
-  .image {
+  .image-in-text{
+    margin:80px 0;
     @media (max-width: 575px) {
       width: 100%;
     }
+  }
+  .image {
+   
 
     img {
       @media (max-width: 575px) {
@@ -78,6 +91,10 @@
     justify-content: center;
     .header-article {
       .header {
+        padding-right: 64px !important;
+        @media (max-width: 991px) {
+          padding-right: 0px !important;
+        }
         box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.04);
         h2 {
           font-size: 32px;
@@ -88,6 +105,7 @@
       }
     }
     .annotation {
+      margin-bottom: 56px;
       box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.04);
       background-color: $white;
       border-radius: 12px;
@@ -134,10 +152,12 @@
 }
 
 .tags {
+  margin-bottom: 40px;
   ul {
     padding: 0;
     li:hover {
       border-radius: 2px;
+      transition: 0.3s;
       background-color: $orange;
       border: 1px solid $orange;
        
@@ -164,16 +184,22 @@
     display: inline;
     a{
       color: $black;
-      padding: 0 7px;
+      padding: 2px 8px;
+      
+      
+        
+      
     }
     a:hover:after{
       width: 0%;
+      border: none;
     }
   }
 }
 
 .related-articles {
   .article {
+    padding:0 24px;
     border-right: 1px solid #eeeef3;
   }
 }
@@ -190,7 +216,9 @@
 }
 
 .paggination{
+  
   ul{
+    
     li{
       background-color: white;
 border-radius: 8px;
@@ -198,8 +226,49 @@ cursor: pointer;
 padding: 6px 12px;
     }
     li:hover{
+      
       color: $white;
       background-color: $orange;
     }
   }
+}
+.hr-blog-tags{
+  margin-bottom: 40px;
+}
+.tags-header{
+  font-family: Nunito;
+font-size: 29px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.active-tag{
+  border: 1px solid black !important;
+  
+}
+
+.list-article{
+  margin-bottom: 42px;
+}
+
+.news-margin{
+  margin-bottom:32px ;
+}
+
+.margin-before-img{
+  margin-bottom: 80px;
+}
+
+.conclusion {
+  margin-bottom: 40px;
+}
+
+.footer-article{
+  margin-top: 28px;
+}
+.hr-before-articles{
+  margin-bottom: 40px;
 }
