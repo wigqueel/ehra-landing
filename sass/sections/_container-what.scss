@@ -1,13 +1,5 @@
 .container-what {
   
-  @media (max-width: 991px) {
-    .reverse-container{
-      display: flex;
-      flex-direction: column-reverse;
-    }
-   
-    
-  }
   background-color: $white;
   border-radius: 20px;
   padding: 102px 0;
@@ -57,9 +49,4 @@
     letter-spacing: 0em;
     text-align: left;
   }
-}
-
-
-.header-zero-one{
-  margin-bottom:20px;
 }

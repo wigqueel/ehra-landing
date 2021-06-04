@@ -24,7 +24,6 @@
       filter: invert(1);
     }
     .all-highlights {
-      font-weight: 700;
       cursor: pointer;
     }
 
@@ -46,10 +45,6 @@
     flex-direction: column !important;
 
     .highlights-text {
-      .main-text{
-        padding-bottom: 36px;
-        margin: 0
-      }
     }
     h5 {
       color: $orange;
@@ -59,9 +54,4 @@
       justify-content: space-between;
     }
   }
-}
-
-.extended-text{
-  margin: 0;
-  padding-bottom: 24px;
 }
