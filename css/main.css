@@ -153,7 +153,6 @@ header .primary-nav .right-part {
 }
 
 header .secondary-nav {
-  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +181,6 @@ header .secondary-nav .links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 120px;
 }
 
 @media (max-width: 1200px) {
@@ -202,7 +200,13 @@ header .secondary-nav .logo {
   margin-bottom: -5px;
 }
 
+header .secondary-nav .logo img {
+  max-width: 102px;
+  width: 100%;
+}
+
 header .secondary-nav a {
+  margin: 25px 0 21.5px 0;
   text-decoration: none;
   color: #1C1A1E;
 }
@@ -359,6 +363,18 @@ header .secondary-nav li a:hover:after {
       flex-wrap: wrap;
 }
 
+@media (max-width: 991px) {
+  .container-what .reverse-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .container-what .question-img img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,10 +439,15 @@ header .secondary-nav li a:hover:after {
   text-align: left;
 }
 
+.header-zero-one {
+  margin-bottom: 20px;
+}
+
 .button-explore {
   position: relative;
   background-color: #f07e4a;
-  min-width: 164px;
+  max-width: 164px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,17 +455,22 @@ header .secondary-nav li a:hover:after {
   color: #FCFCFD;
   border: none;
   border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .button-explore img {
-  position: absolute;
-  width: 18px;
-  top: 19px;
-  left: 125px;
-  -webkit-transition: left 0.3s;
-  transition: left 0.3s;
+  margin-left: 24px;
+  width: 16px;
+  top: 17px;
+  left: 130px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-explore:hover {
@@ -454,7 +480,7 @@ header .secondary-nav li a:hover:after {
 }
 
 .button-explore:hover img {
-  left: 130px;
+  margin-left: 32px;
 }
 
 .button-arrow {
@@ -535,6 +561,7 @@ header .secondary-nav li a:hover:after {
 }
 
 .highlights .header-highlights .all-highlights {
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -562,6 +589,11 @@ header .secondary-nav li a:hover:after {
   width: 100%;
 }
 
+.highlights .container-half .highlights-text .main-text {
+  padding-bottom: 36px;
+  margin: 0;
+}
+
 .highlights .container-half h5 {
   color: #f07e4a;
 }
@@ -573,6 +605,11 @@ header .secondary-nav li a:hover:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.extended-text {
+  margin: 0;
+  padding-bottom: 24px;
 }
 
 footer {
@@ -671,9 +708,11 @@ footer .footer-bottom li {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 32px;
 }
 
 .container-double .text-image {
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -1242,7 +1281,7 @@ main {
 
 main h2 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 56px;
 }
 /*# sourceMappingURL=main.css.map */
