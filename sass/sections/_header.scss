@@ -169,8 +169,9 @@ header {
       letter-spacing: 0em;
       text-align: left;
       color: $white;
-      background-color: $orange;
+      background-color: $white;
       border: none;
+      transition: 0.3s;
     }
   }
 
@@ -181,4 +182,8 @@ header {
   img {
     cursor: pointer;
   }
+}
+
+.header-tools{
+  background-color: $orange !important;
 }

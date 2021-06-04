@@ -4,19 +4,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-@import "base/variables";
-@import "base/_base.scss";
-@import "sections/_header.scss";
+@import "./base/variables";
+@import "./base/_base.scss";
+@import "./sections/_header.scss";
 @import "./sections/carousel";
-@import "sections/_container-what";
-@import "sections/_button-explore";
+@import "./sections/_container-what";
+@import "./sections/_button-explore";
 @import "./sections/button-arrow";
 @import "./sections/highlights";
-@import "sections/_footer.scss";
-@import "texts/standart";
-@import "sections/container-double";
-@import "sections/burger-menu";
-@import "sections/button-subscribe";
+@import "./sections/_footer.scss";
+@import "./texts/standart";
+@import "./sections/container-double";
+@import "./sections/burger-menu";
+@import "./sections/button-subscribe";
 @import "./sections/_events";
 @import "./sections/article";
 @import "./sections/dot-list";
@@ -68,3 +68,8 @@ main {
   max-width: 1500px;
   width: 100%;
 }
+
+hr{
+  width: 100%;
+}
+

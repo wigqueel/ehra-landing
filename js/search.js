@@ -25,9 +25,11 @@ function searchInput() {
   if (x.style.display != "none") {
     x.style.display = "none";
     divBorder.style.border = "none";
+    x.style.backgroundColor = "white";
   } else {
     divBorder.style.borderBottom = "2px solid white";
     x.style.display = "block";
+    x.style.backgroundColor = "white";
   }
 }
 

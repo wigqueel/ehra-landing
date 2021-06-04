@@ -1,8 +1,12 @@
 .footer-news {
   .load-more {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
     position: relative;
     background-color: $orange;
-    min-width: 164px;
+    
     display: flex;
    padding: 14px 28px;
     align-items: center;
