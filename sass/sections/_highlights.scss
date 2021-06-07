@@ -1,9 +1,15 @@
 .highlights {
  display: inline-block;
   .container-half {
-    margin-bottom: 0px !important;
+   
   }
   .header-highlights {
+    h2 {
+      font-size: 48px;
+  
+      font-weight: 700;
+      line-height: 56px;
+    }
    h3{
     font-size: 24px;
     font-weight: 700;

@@ -502,10 +502,17 @@ header .secondary-nav li a:hover:after {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-arrow img {
   height: 18px;
+}
+
+.button-arrow img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-arrow:hover {
@@ -525,10 +532,6 @@ header .secondary-nav li a:hover:after {
   display: inline-block;
 }
 
-.highlights .container-half {
-  margin-bottom: 0px !important;
-}
-
 .highlights .header-highlights {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -545,6 +548,12 @@ header .secondary-nav li a:hover:after {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.highlights .header-highlights h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
 }
 
 .highlights .header-highlights h3 {
@@ -1044,7 +1053,7 @@ footer .footer-bottom li {
 }
 
 .article-small {
-  border-bottom: 1px solid #EEEEF3;
+  border-bottom: 1px solid #eeeef3;
   border-right: none !important;
 }
 
@@ -1223,7 +1232,7 @@ footer .footer-bottom li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #f07e4a;
-  border: 1px solid #f07e4a;
+  border: 1px solid #f07e4a !important;
 }
 
 .tags ul li:hover a {
@@ -1270,7 +1279,7 @@ footer .footer-bottom li {
 
 .paggination ul li {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 3px;
   cursor: pointer;
   padding: 6px 12px;
 }
